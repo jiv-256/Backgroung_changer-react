@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import PropType from 'prop-types'
+// import React,{useState} from 'react'
+// import PropType from 'prop-types'
 export default function Navbar(props) {
   // const [mystyle, setmystyle] = useState({
   //   color:'black',
