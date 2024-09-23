@@ -39,8 +39,8 @@ const handleExtraSpace = ()=>{
    
     <div className="container my-3 " style={{color: props.Mode==='dark'?'white':'black'}}>
       <h2>Your text summary</h2>
-      <p>{text.split(" ").length} words and {text.length} characters</p>
-      <p>{Math.ceil(0.008*(text.split(" ").length))} Minutes read </p>
+      <p>{text.length===0?0:text.split(" ").length} words and {text.length} characters</p>
+      <p>{text.length===0?0:Math.ceil(0.008*(text.split(" ").length))} Minutes read </p>
       <h3>Preview</h3>
       <p>{text}</p>
     </div>
