@@ -12,7 +12,7 @@ export default function About(props) {
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
-      <div class="accordion-body" style={{backgroundColor: props.Mode==='light'?'white':'grey'}}>
+      <div class="accordion-body" style={{backgroundColor: props.Mode==='light'?'white':'#042743'}}>
         <strong>Our mission is to empower writers of all levels by providing an intuitive, reliable, and efficient platform that simplifies the editing process.</strong>We aim to enhance the clarity, accuracy, and professionalism of written content, helping users express their ideas with confidence.
         <br/>
         <br/>
@@ -28,7 +28,7 @@ export default function About(props) {
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         
-      <div class="accordion-body " style={{backgroundColor: props.Mode==='light'?'white':'grey' }} >
+      <div class="accordion-body " style={{backgroundColor: props.Mode==='light'?'white':'#042743' }} >
         <strong> The editor on our website is an easy to use tool for text editing online that doesn’t make its users go through or follow any intricate procedures for editing their text files.</strong> You don’t need to learn the editing features provided on this tool as they are similar to the ones you might already have used on the text editing programs like MS Word. The simple steps you have to follow for using this text editor online are discussed below.
         <br/>
         <br/>
@@ -52,7 +52,7 @@ export default function About(props) {
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-      <div class="accordion-body" style={{backgroundColor: props.Mode==='light'?'white':'grey'}}>
+      <div class="accordion-body" style={{backgroundColor: props.Mode==='light'?'white':'#042743'}}>
         <strong>At WordForge, we believe that editing should be effortless and enjoyable.</strong>  Our platform is designed with simplicity in mind, ensuring that whether you're refining a short essay or polishing a professional document, you can do so with ease. With an intuitive interface and streamlined tools, you can focus on your writing, while we take care of the rest.
       </div>
     </div>

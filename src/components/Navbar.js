@@ -2,29 +2,7 @@ import React from 'react'
 import logo from './favicon-32x32.png'
 // import PropType from 'prop-types'
 export default function Navbar(props) {
-  // const [mystyle, setmystyle] = useState({
-  //   color:'black',
-  //   bakgroundColor:'white'
-  // })
-  // const [btntext, setbtntext] = useState("Light Mode")
-  
-  // const lightmode =()=>{
-  //   if(mystyle.color =='black'){
-  //     setmystyle({
-  //       color:'black',
-  //       backgroundColor:'white'
-  //     })
-  //     setbtntext("Dark mode")
-  //   }
-  //   else{
-  //     setmystyle({
-  //       color:'white',
-  //       backgroundColor:'black'
-  //     })
-  //     setbtntext("blue Mode")
-      
-  //   }
-  // }
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.Mode} bg-${props.Mode}`} >
   <div className="container-fluid">

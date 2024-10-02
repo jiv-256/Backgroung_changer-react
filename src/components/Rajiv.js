@@ -5,21 +5,25 @@ export default function Rajiv(props) {
   const handleUPClick = ()=>{
       let newtext = text.toUpperCase(); 
       setText(newtext)
-  }
-  const handleLOClick= ()=>{
-    let newtext = text.toLowerCase();
-    setText(newtext)
-  }
-  const handleonChange = (event)=>{
-    setText(event.target.value)
-  }
-  const handleonclear = ()=>{
-    let newtext = "";
-    setText(newtext);
-  }
-const handleExtraSpace = ()=>{
-  let newText = text.split(/[ ]+/);
-  setText(newText.join(" "))
+      props.showalert("Converted to uppercase" , "success");
+    }
+    const handleLOClick= ()=>{
+      let newtext = text.toLowerCase();
+      setText(newtext)
+      props.showalert("Converted to lowercase" , "success");
+    }
+    const handleonChange = (event)=>{
+      setText(event.target.value)
+    }
+    const handleonclear = ()=>{
+      let newtext = "";
+      setText(newtext);
+      props.showalert("text cleared" , "success");
+    }
+    const handleExtraSpace = ()=>{
+      let newText = text.split(/[ ]+/);
+      setText(newText.join(" "))
+      props.showalert("extra space removed" , "success");
 }
 
  
