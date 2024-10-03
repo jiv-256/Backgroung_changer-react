@@ -1,4 +1,7 @@
 import React,{useState} from 'react'
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+
+
 // import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
@@ -32,12 +35,23 @@ function App() {
 
   return (
     < >
+    <Router>
       <Navbar title ="WordForge" Mode={Mode} toggledarkmode={toggledarkmode}/>
       <Alert alert={alert}/>
-      <div className="container ">
-        <Rajiv heading="Enter the text to analyze" Mode={Mode} toggledarkmode={toggledarkmode} showalert={showalert}/>
-        <About Mode={Mode} toggledarkmode={toggledarkmode}/>
-      </div>
+      <Routes>
+         
+          <Route path="/about" element={<About Mode={Mode} toggledarkmode={toggledarkmode}/>} /> 
+        
+          
+          
+          <Route path="/home" element={<div className="container ">
+              <Rajiv heading="Enter the text to analyze" Mode={Mode} toggledarkmode={toggledarkmode} showalert={showalert}/>
+            </div>} />  
+          
+            
+          
+        </Routes>
+        </Router>
     </>
   );
 }

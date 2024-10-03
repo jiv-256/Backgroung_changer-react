@@ -1,5 +1,5 @@
 import React from 'react'
-import PropType from 'prop-types'
+// import PropType from 'prop-types'
 export default function About(props) {
   return (
     <div className="container " style={{color: props.Mode==='dark'?'white':'black'}}>
