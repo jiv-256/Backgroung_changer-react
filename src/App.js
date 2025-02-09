@@ -17,7 +17,7 @@ function App() {
     })
     setTimeout(() =>{
       setalert(null)
-    }, 1500);
+    }, 1700);
   }
 
   const toggledarkmode=()=>{
@@ -40,13 +40,16 @@ function App() {
       <Alert alert={alert}/>
       <Routes>
          
-          <Route path="/about" element={<About Mode={Mode} toggledarkmode={toggledarkmode}/>} /> 
         
           
           
-          <Route path="/home" element={<div className="container ">
-              <Rajiv heading="Enter the text to analyze" Mode={Mode} toggledarkmode={toggledarkmode} showalert={showalert}/>
+          <Route path="/" element={<div className="container ">
+              <Rajiv heading="Try WordForge - Word Counter, Character Counter, Remove extra spaces" Mode={Mode} toggledarkmode={toggledarkmode} showalert={showalert}/>
             </div>} />  
+          <Route path="/home" element={<div className="container ">
+              <Rajiv heading="Try WordForge - Word Counter, Character Counter, Remove extra spaces" Mode={Mode} toggledarkmode={toggledarkmode} showalert={showalert}/>
+            </div>} />  
+          <Route path="/about" element={<About Mode={Mode} toggledarkmode={toggledarkmode}/>} /> 
           
             
           

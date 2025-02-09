@@ -2,7 +2,7 @@ import React from 'react'
 // import PropType from 'prop-types'
 export default function About(props) {
   return (
-    <div className="container " style={{color: props.Mode==='dark'?'white':'black'}}>
+    <div className="container mt-4" style={{color: props.Mode==='dark'?'#ffff':'black'}}>
         <h3>About Us</h3>
         <div class="accordion" id="accordionExample">
   <div class="accordion-item " >
